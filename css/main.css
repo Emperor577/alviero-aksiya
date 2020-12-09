@@ -63,7 +63,7 @@ html, body {
 }
 
 body {
-  background: #111111;
+  /* background: #111111; */
   font-family: "librebaskerville-regular", serif;
   font-size: 1.6rem;
   line-height: 3rem;
@@ -1260,10 +1260,10 @@ header .header-logo a {
   padding: 0;
   outline: 0;
   border: none;
-  width: 57px;
-  height: 27px;
+  width: 300px;
+  height: 80px;
   background: url("../images/logo.png") no-repeat center;
-  background-size: 57px 27px;
+  background-size:100% 100%;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -1297,10 +1297,11 @@ header .header-logo a {
   transition: all 0.3s ease-in-out;
 }
 #header-menu-trigger.opaque {
-  background-color: #000000;
+  background-color: var(--c-main);
 }
 #header-menu-trigger.opaque .header-menu-text {
-  background-color: #000000;
+  height: 42px;
+  background-color: var(--c-main);
 }
 #header-menu-trigger:hover, #header-menu-trigger:focus {
   color: #FFFFFF;
@@ -1349,7 +1350,7 @@ header .header-logo a {
  * off-canvas menu - (_layout.scss) 
  * ------------------------------------------------------------------- */
 #menu-nav-wrap {
-  background: #0C0C0C;
+  background: var(--c-main);
   color: rgba(255, 255, 255, 0.25);
   font-size: 1.5rem;
   line-height: 1.6;
@@ -1374,7 +1375,7 @@ header .header-logo a {
   transition: all 0.4s ease-in-out;
 }
 #menu-nav-wrap a, #menu-nav-wrap a:visited {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 #menu-nav-wrap a:hover, #menu-nav-wrap a:focus, #menu-nav-wrap a:active {
   color: white;
@@ -1402,7 +1403,7 @@ header .header-logo a {
   border-top: 1px dotted rgba(255, 255, 255, 0.03);
 }
 #menu-nav-wrap .nav-list li a {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.75);
   display: block;
 }
 #menu-nav-wrap .nav-list li a:hover, 
@@ -1508,7 +1509,7 @@ header .header-logo a {
 #home {
   width: 100%;
   height: 100%;
-  background-color: #151515;
+  background-color: var(--c-main);
   background-image: url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
@@ -1526,7 +1527,7 @@ header .header-logo a {
   width: 100%;
   height: 100%;
   opacity: .2;
-  background-color: #19191b;
+  background-color: var(--c-main);
 }
 
 .home-content-table {
@@ -1783,7 +1784,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-align: center;
 }
 #about .about-wrap {
-  max-width: 850px;
+  max-width: 900px;
 }
 #about span {
   color: #07617d;
@@ -1807,7 +1808,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #about .lead {
   font-family: "librebaskerville-bold", serif;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.8;
   color: #2e383f;
   margin-top: 6rem;
@@ -1885,8 +1886,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #services {
-  background-color: #19191b;
-  background-image: url(../images/services-bg.jpg);
+  background-color: rgba(32, 57, 97, 0.9);
+  /* background-image: url(../images/services-bg.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
