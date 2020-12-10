@@ -1134,7 +1134,6 @@ input::-moz-focus-inner {
   margin-bottom: 1.5rem;
 }
 .section-intro h1 {
-  font-family: "librebaskerville-bold", serif;
   font-size: 4.8rem;
   line-height: 1.375;
   color: #151515;
@@ -1510,16 +1509,16 @@ header .header-logo a {
  * ------------------------------------------------------------------- */
 #home {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: var(--c-main);
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/aksiya.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 804px;
+  min-height: 800px;
   position: relative;
 }
 #home .overlay {
@@ -1528,7 +1527,7 @@ header .header-logo a {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .2;
+  opacity: .3;
   background-color: var(--c-main);
 }
 
@@ -1816,10 +1815,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-top: 6rem;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * about 
- * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
   #about {
     min-height: 636px;
@@ -1828,7 +1823,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     max-width: 800px;
   }
   #about .lead {
-    font-size: 3.8rem;
+    font-size: 3rem;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -1882,11 +1877,32 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 
+/* Action */
+#action {
+  /* background-color:rgba(17,17,17,1); */
+  padding: 4.2rem 0 12rem;
+  color: #fff;
+}
 
-/* ===================================================================
- *  12. services - (_layout.scss)
- *
- * ------------------------------------------------------------------- */
+#action h3 {
+  color: var(--c-main);
+  text-align: center;
+  font-size: 4rem;
+}
+#action ol {
+  color: #2e383f;
+  margin: 0;
+  padding: 1rem 0;
+  /* list-style: none; */
+  font-size: 1.4em;
+  font-weight: 600;
+}
+#action ol li{
+ padding: .7rem 0;
+}
+#action .action-wrap {
+  max-width: 800px;
+}
 #standart {
   background-color: rgba(32, 57, 97, 0.9);
   /* background-image: url(../images/services-bg.jpg); */
@@ -1942,8 +1958,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 0 50px;
 }
 #standart  .services-list .service-item img {
-  width : 400px;
-  height: 400px;
+  width : 250px;
+  height: 250px;
 }
 #standart  .services-list .service-item p {
   color: rgba(242, 242, 242, 0.5);
@@ -2010,43 +2026,45 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *  13. portfolio - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
-#portfolio {
+#premium {
   background: #FFFFFF;
   min-height: 800px;
   position: relative;
   padding: 0;
 }
-#portfolio .intro-wrap {
+#premium .intro-wrap {
   padding: 15rem 0 21rem;
-  background: #111111;
+  background:url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-#portfolio .section-intro h3 {
+#premium .section-intro h3 {
   color: rgba(242, 242, 242, 0.5);
 }
-#portfolio .section-intro h1 {
+#premium .section-intro h1 {
   color: #FFFFFF;
 }
-#portfolio .section-intro .lead {
+#premium .section-intro .lead {
   color: rgba(242, 242, 242, 0.4);
 }
-#portfolio .portfolio-content {
+#premium .portfolio-content {
   margin-top: -22.2rem;
 }
-#portfolio .bricks-wrapper:before, 
-#portfolio .bricks-wrapper:after {
+#premium .bricks-wrapper:before, 
+#premium .bricks-wrapper:after {
   content: "";
   display: table;
 }
-#portfolio .bricks-wrapper:after {
+#premium .bricks-wrapper:after {
   clear: both;
 }
-#portfolio .bricks-wrapper .brick {
+#premium .bricks-wrapper .brick {
   float: left;
   width: 50%;
   padding: 0;
   margin: 0;
 }
-#portfolio .bricks-wrapper .brick:nth-child(2n+1) {
+#premium .bricks-wrapper .brick:nth-child(2n+1) {
   clear: both;
 }
 
@@ -2194,6 +2212,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   transform: translateX(0);
 }
 
+.folio-item img {
+  width: 100%;
+}
+
 /* ------------------------------------------------------------------- 
  * Light Gallery Overrides - (_layout.css) 
  * ------------------------------------------------------------------- */
@@ -2249,12 +2271,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * portfolio
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
-  #portfolio .intro-wrap {
+  #premium .intro-wrap {
     padding: 12rem 0 21rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  #portfolio .bricks-wrapper .brick {
+  #premium .bricks-wrapper .brick {
     float: none;
     width: 100%;
   }
@@ -2305,7 +2327,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   line-height: 1.8;
   color: #151515;
 }
-#testimonial-slider p::before, #testimonial-slider p::after {
+/* #testimonial-slider p::before, #testimonial-slider p::after {
   display: inline-block;
   font-family: "librebaskerville-bold", serif;
   font-size: 3.6rem;
@@ -2316,7 +2338,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #testimonial-slider p::after {
   content: '\201D';
-}
+} */
 #testimonial-slider .testimonial-author {
   margin-top: 4.2rem;
 }
@@ -2513,9 +2535,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *  16. contact - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
-#contact {
+#rules {
   background-color: #111111;
-  background-image: url(../images/contact-bg.jpg);
+  background-image: url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -2524,7 +2546,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 12rem 0 12rem;
   position: relative;
 }
-#contact .overlay {
+#rules .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -2533,14 +2555,23 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   opacity: .75;
   background-color: #000000;
 }
-#contact .section-intro h1 {
+#rules .section-intro h1 {
   color: white;
 }
-#contact .section-intro h3 {
+#rules .section-intro h3 {
   color: rgba(242, 242, 242, 0.5);
 }
-#contact .section-intro p.lead {
+#rules .section-intro p.lead {
   color: rgba(242, 242, 242, 0.4);
+}
+#rules .col-twelve ul {
+  color: #fff;
+  text-align: left;
+  list-style: decimal;
+  font-size: 1.8rem;
+}
+#rules .col-twelve ul li {
+  padding: 1rem 0;
 }
 
 .contact-content {
@@ -2565,21 +2596,21 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 /* contact form */
-#contact form {
+#rules form {
   margin-top: 0;
   margin-bottom: 3rem;
 }
-#contact form .form-field {
+#rules form .form-field {
   position: relative;
 }
-#contact form .form-field:before, #contact form .form-field:after {
+#rules form .form-field:before, #rules form .form-field:after {
   content: "";
   display: table;
 }
-#contact form .form-field:after {
+#rules form .form-field:after {
   clear: both;
 }
-#contact form .form-field label {
+#rules form .form-field label {
   font-family: "montserrat-bold", sans-serif;
   font-size: 1rem;
   line-height: 1.4;
@@ -2594,7 +2625,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background: #f9a828;
   border-radius: 3px;
 }
-#contact form .form-field label::after {
+#rules form .form-field label::after {
   position: absolute;
   right: 15px;
   top: 1px;
@@ -2604,49 +2635,49 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   border-bottom: 5px solid #f9a828;
   content: "";
 }
-#contact form ::-webkit-input-placeholder {
+#rules form ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-#contact form :-moz-placeholder {
+#rules form :-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
   /* Firefox 18- */
 }
-#contact form ::-moz-placeholder {
+#rules form ::-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
   /* Firefox 19+ */
 }
-#contact form :-ms-input-placeholder {
+#rules form :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-#contact form .placeholder {
+#rules form .placeholder {
   color: rgba(255, 255, 255, 0.3) !important;
 }
 
-#contact input[type="text"],
-#contact input[type="password"],
-#contact input[type="email"],
-#contact textarea {
+#rules input[type="text"],
+#rules input[type="password"],
+#rules input[type="email"],
+#rules textarea {
   width: 100%;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 3.6rem;
   background: rgba(255, 255, 255, 0.1);
 }
 
-#contact input[type="text"]:focus,
-#contact input[type="password"]:focus,
-#contact input[type="email"]:focus {
+#rules input[type="text"]:focus,
+#rules input[type="password"]:focus,
+#rules input[type="email"]:focus {
   color: #FFFFFF;
 }
 
-#contact textarea {
+#rules textarea {
   min-height: 21rem;
   padding: 1.8rem 2rem;
 }
-#contact textarea:focus {
+#rules textarea:focus {
   color: #FFFFFF;
 }
 
-#contact button.submitform {
+#rules button.submitform {
   font-size: 1.5rem;
   display: block;
   letter-spacing: .2rem;
@@ -2658,7 +2689,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: #000000;
   margin-top: .6rem;
 }
-#contact button.submitform:hover, #contact button.submitform:focus {
+#rules button.submitform:hover, #rules button.submitform:focus {
   background: #f89e0f;
 }
 
@@ -2936,7 +2967,7 @@ footer h4.h05::after {
   width: 60px;
   line-height: 63px;
   text-align: center;
-  background-color: #000000;
+  background-color: var(--c-main);
   color: #888;
   text-align: center;
   text-transform: uppercase;
