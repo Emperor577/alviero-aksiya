@@ -18,7 +18,7 @@
  *  11. about
  *  12. services
  *  13. portfolio
- *  14. testimonials
+ *  14. participate
  *  15. clients
  *  16. contact
  *  17. footer
@@ -471,7 +471,7 @@ td:last-child {
 }
 
 .pace .pace-progress {
-  background: #f9a828;
+  background: var(--c-secondary);
   position: fixed;
   z-index: 900;
   top: 0;
@@ -510,7 +510,7 @@ td:last-child {
   margin-left: -30px;
   margin-top: -30px;
   padding: 0;
-  background-color: #f9a828;
+  background-color: var(--c-secondary);
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -2289,15 +2289,15 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 
 /* ===================================================================
- *  14. testimonials - (_layout.scss)
+ *  14. participate - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
-#testimonials {
+#participate {
   background: #FFFFFF;
   padding: 12rem 0 7.8rem;
   text-align: center;
 }
-#testimonials h2 {
+#participate h2 {
   font-family: "montserrat-bold", sans-serif;
   font-size: 1.8rem;
   line-height: 1.667;
@@ -2308,7 +2308,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-bottom: 4.2rem;
 }
 
-#testimonials .flex-container {
+#participate .flex-container {
   width: 80%;
   max-width: 900px;
   margin: 0 auto;
@@ -2372,20 +2372,20 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 /* control nav */
-#testimonials .flex-control-nav {
+#participate .flex-control-nav {
   width: 100%;
   text-align: center;
   display: block;
   position: absolute;
   bottom: -1.5rem;
 }
-#testimonials .flex-control-nav li {
+#participate .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;
   zoom: 1;
 }
 
-#testimonials .flex-control-paging li a {
+#participate .flex-control-paging li a {
   width: 9px;
   height: 9px;
   background-color: #959595;
@@ -2396,16 +2396,16 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-shadow: none;
   color: transparent;
 }
-#testimonials .flex-control-paging li a:hover {
+#participate .flex-control-paging li a:hover {
   background-color: #555555;
 }
-#testimonials .flex-control-paging li a.flex-active {
+#participate .flex-control-paging li a.flex-active {
   background-color: #000000;
 }
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * testimonials
+ * participate
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
   #testimonial-slider p {
@@ -2413,7 +2413,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 @media only screen and (max-width: 768px) {
-  #testimonials h2 {
+  #participate h2 {
     font-size: 1.7rem;
   }
 
@@ -2432,7 +2432,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 @media only screen and (max-width: 600px) {
-  #testimonials .flex-container {
+  #participate .flex-container {
     width: 90%;
   }
 
@@ -2441,12 +2441,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 @media only screen and (max-width: 500px) {
-  #testimonials h2 {
+  #participate h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 400px) {
-  #testimonials .flex-container {
+  #participate .flex-container {
     width: 100%;
   }
 
