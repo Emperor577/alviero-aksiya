@@ -1904,7 +1904,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   max-width: 800px;
 }
 #standart {
-  background-color: rgba(32, 57, 97, 0.9);
+  background-color: #203961; /* rgba(32, 57, 97, 0.9) */
   /* background-image: url(../images/services-bg.jpg); */
   background-repeat: no-repeat;
   background-position: center;
