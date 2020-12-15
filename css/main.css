@@ -1522,6 +1522,8 @@ header .header-logo a {
   background-image: url(../images/aksiya.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
+  background-position-x: center;
+  background-position-y: 30%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
