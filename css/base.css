@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 :root {
   --c-main: #203961;
   --c-secondary : #5eb238;
@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 article,
@@ -121,7 +122,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family:  monospace, monospace;
   font-size: 1em;
 }
 

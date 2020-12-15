@@ -1248,7 +1248,7 @@ header .row {
 header .header-logo {
   position: absolute;
   left: 32px;
-  top: 42px;
+  top: 25px;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
@@ -1261,9 +1261,10 @@ header .header-logo a {
   padding: 0;
   outline: 0;
   border: none;
-  width: 300px;
-  height: 80px;
-  background: url("../images/logo.png") no-repeat center;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  background: url("../images/logo_alviero.svg") no-repeat center;
   background-size:100% 100%;
   font: 0/0 a;
   text-shadow: none;
@@ -1383,10 +1384,17 @@ header .header-logo a {
 }
 #menu-nav-wrap h3 {
   color: white;
-  font-family: "montserrat-regular", sans-serif;
+  /* font-family: "montserrat-regular", sans-serif; */
   font-size: 2rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
+}
+#menu-nav-wrap h4 {
+  color: white;
+  /* font-family: "montserrat-regular", sans-serif; */
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 1.5rem;
 }
 #menu-nav-wrap .nav-list {
   font-family: "montserrat-regular", sans-serif;
@@ -1891,7 +1899,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #action ol {
   color: #2e383f;
-  margin: 0;
+  /* margin: 0; */
   padding: 1rem 0;
   /* list-style: none; */
   font-size: 1.4em;
@@ -1948,18 +1956,23 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #standart  .services-content {
   text-align: center;
   max-width: 1040px;
+  margin: auto;
 }
 #standart  .services-list {
-  margin-top: 1.2rem;
+  margin: 1.2rem 2rem;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
+  grid-gap: 7rem;
 }
 #standart  .services-list .service-item {
   margin-bottom: 3rem;
   padding: 0 50px;
 }
-#standart  .services-list .service-item img {
+#standart  .services-list  img {
   width : 250px;
   height: 250px;
+  object-fit: contain;
 }
 #standart  .services-list .service-item p {
   color: rgba(242, 242, 242, 0.5);
@@ -2301,6 +2314,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *  14. participate - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
+
 #participate {
   background: #FFFFFF;
   padding: 12rem 0 7.8rem;
@@ -2308,7 +2322,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #participate h2 {
   font-family: "montserrat-bold", sans-serif;
-  font-size: 1.8rem;
+  font-size: 3.6rem;
   line-height: 1.667;
   color: #07617d;
   text-transform: uppercase;
@@ -2317,10 +2331,17 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   margin-bottom: 4.2rem;
 }
 
-#participate .flex-container {
+/* #participate .flex-container {
   width: 80%;
   max-width: 900px;
   margin: 0 auto;
+} */
+
+#participate .participation {
+  list-style: decimal;
+  text-align: left;
+  font-size: 1.8rem;
+
 }
 
 #testimonial-slider {
