@@ -4,15 +4,16 @@
   --c-secondary : #5eb238;
 }
 
+
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto',  sans-serif;
 }
 
 article,
