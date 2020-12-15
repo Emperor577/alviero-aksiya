@@ -1907,7 +1907,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   font-weight: 500;
 }
 #action ol li{
- padding: .7rem 0;
+ padding: .7rem;
 }
 #action .action-wrap {
   max-width: 800px;
