@@ -1522,8 +1522,11 @@ header .header-logo a {
   background-image: url(../images/aksiya.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
+  background-position-x: center;
+  background-position-y: 30%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   min-height: 800px;
@@ -1901,7 +1904,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #action ol {
   color: #2e383f;
   /* margin: 0; */
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   /* list-style: none; */
   font-size: 1.4em;
   font-weight: 500;
