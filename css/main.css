@@ -1262,7 +1262,7 @@ header .header-logo a {
   outline: 0;
   border: none;
   width: 200px;
-  height: 40px;
+  height: 50px;
   font-size: 18px;
   background: url("../images/logo_alviero.svg") no-repeat center;
   background-size:100% 100%;
@@ -2318,7 +2318,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #participate {
   background: #FFFFFF;
-  padding: 12rem 0 7.8rem;
+  padding: 2rem 0 7.8rem;
   text-align: center;
 }
 #participate h2 {
