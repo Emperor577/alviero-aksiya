@@ -1276,6 +1276,51 @@ header .header-logo a {
   transition: all 0.5s ease-in-out;
 }
 
+/* -------------------------------------------------------------------
+ * menu lang - (_layout.css)
+ * ------------------------------------------------------------------- */
+
+#uz-lang{
+  display: block;
+  position: absolute;
+  right: 180px;
+  top: 30px;
+  line-height: 42px;
+
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: rgba(255, 255, 255, 0.5);
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+}
+
+#ru-lang{
+  display: block;
+  position: absolute;
+  right: 150px;
+  top: 30px;
+  line-height: 42px;
+
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: rgba(255, 255, 255, 0.5);
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+}
+
+#ru-lang:hover, #uz-lang:hover{
+  color: #ffffff;
+}
 /* ------------------------------------------------------------------- 
  * menu trigger - (_layout.css) 
  * ------------------------------------------------------------------- */
