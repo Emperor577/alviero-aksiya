@@ -2806,6 +2806,14 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   display: block;
 }
 
+#pickup {
+  margin-top: 2rem;
+}
+#pickup table tr td {
+  text-align: center;
+  padding: 10px;
+}
+
 /* --------------------------------------------------------------- 
  * loader animation - (_layout.scss)
  * --------------------------------------------------------------- */
