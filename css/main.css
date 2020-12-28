@@ -425,6 +425,8 @@ table {
 }
 
 th,
+
+
 td {
   padding: 1.5rem 3rem;
   text-align: left;
@@ -1320,6 +1322,49 @@ header .header-logo a {
 
 #ru-lang:hover, #uz-lang:hover{
   color: #ffffff;
+}
+/* responsive
+  language
+*/
+@media only screen and (max-width: 400px){
+  #uz-lang{
+    right: 125px;
+  }
+  #ru-lang{
+    right: 95px;
+  }
+  .responsive-text-for-td{
+    font-size: 13px;
+  }
+  #table-row{
+    padding-left: 5px;
+  }
+  #uz-info{
+    letter-spacing: 0;
+  }
+  #uz-header{
+    letter-spacing: 0;
+    font-size: 2.9rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #uz-lang{
+    right: 180px;
+  }
+  #ru-lang{
+    right: 150px;
+  }
+  .responsive-text-for-td{
+    font-size: 13px;
+  }
+  #uz-info {
+    letter-spacing: 0;
+    font-size: 1.7rem;
+  }
+  #uz-header{
+    letter-spacing: 0;
+    font-size: 3.2rem;
+  }
 }
 /* ------------------------------------------------------------------- 
  * menu trigger - (_layout.css) 
